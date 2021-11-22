@@ -5,6 +5,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard' 
 import Contacts from './pages/Contacts'
 import Campaigns from './pages/Campaigns'
+import Templates from './pages/Templates'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
 					<Route path="/Dashboard" exact component={Dashboard} />
 					<Route path="/Contacts" exact component={Contacts} />
 					<Route path="/Campaigns" exact component={Campaigns} />
+					<Route path="/Templates" exact component={Templates} />
 				</BrowserRouter>
 			</div>
 		</div>

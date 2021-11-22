@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import jwt from 'jsonwebtoken'
 import { useHistory } from 'react-router-dom'
+import logout from '../components/logout'
 
 function Contacts() {
 	const history = useHistory()
@@ -14,6 +15,7 @@ function Contacts() {
     const [city, setCity] = useState('')
     const [state, setState] = useState('')
     const [zipcode, setZipcode] = useState('')
+
 
 	useEffect(() => {
 		const token = localStorage.getItem('token')
@@ -139,6 +141,7 @@ function Contacts() {
 				<input type="submit" value="Add New Contact" />
 			</form>
 			<button onClick={readContact}>Read Contacts</button>
+			<button onClick={logout}>Logout</button>
 		</div>
 	)
 }
