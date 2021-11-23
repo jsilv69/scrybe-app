@@ -30,7 +30,8 @@ function App() {
 	}
 
 	return (
-		<div>
+		<div className="container">
+			<div className="componentBox">
 			<h1>Login</h1>
 			<form onSubmit={loginUser}>
 				<input
@@ -49,6 +50,7 @@ function App() {
 				<br />
 				<input type="submit" value="Login" />
 			</form>
+			</div>
 		</div>
 	)
 }

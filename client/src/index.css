@@ -1,4 +1,17 @@
+:root {
+  --cswhite: #F2F2F2;
+  --csblack: #202020;
+  --cslightblack: #2A2A2A;
+  --csblue: #4A6CED;
+  --cslightblue: #7491FF;
+  --csyellow: #FDAA22;
+  --cslightyellow: #FDAA22;
+  
+
+}
+
 body {
+  background-color: var(--cslightblue);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +23,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.componentBox {
+  padding: 2em 4em 2em 4em;
+  border-radius: 10px;
+  background-color: var(--cswhite);
+  -webkit-box-shadow: 0px 0px 35px -15px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 35px -15px rgba(0,0,0,0.5);
 }
